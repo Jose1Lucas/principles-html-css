@@ -1,43 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta tags-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" name="José Lucas" />
-    <title>Html e Css essenciais</title>
-    <!--Link para folha de estilos "css"-->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!--Cabeçalho do site-->
-    <header>
-      <h1>Aqui se encontra o Título Principal do Site</h1>
-      <!-- Aqui a tag <nav> agrupa explicitamente a seção de navegação do site-->
-      <nav>
-        <ul>
-          <li><a href="#section1">Seção 1</a></li>
-          <li><a href="#section2">Seção 2</a></li>
-          <li><a href="#section3">Seção 3</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Aqui a tag <main> agrupa explicitamente a seção de conteúdo principal do site-->
-    <main>
-      <section id="section1">
-        <!--Aqui o <h2> é mais um título porém tendo um "peso" menor seguindo até o <h6>-->
-        <h2>Seção 1: Parágrafos e formatação</h2>
-        <p>
-          Aqui está um <strong>parágrafo</strong> (negrito com strong) com
-          alguns textos: <br />
-          <em>itálico,</em><u>sublinhado,</u><mark>destacado</mark>
-        </p>
-        <!--É uma boa prática adicionar o cite na tag blockquote mesmo não sendo obrigatório-->
-        <blockquote cite="https://conceito.de/html">
-          Este é um bloco de citação para destacar techos importantes. No caso o
-          conceito de <a href="https://conceito.de/html"" target="_blank" rel="noopener noreferrer">Html</a>
-        </blockquote>
-      </section>
-    </main>
-  </body>
+
+<head>
+  <!-- Meta tags-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" name="José Lucas" />
+  <title>Html e Css essenciais</title>
+  <!--Link para folha de estilos "css"-->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!--Cabeçalho do site-->
+  <header>
+    <h1>Aqui se encontra o Título Principal do Site</h1>
+    <!-- Aqui a tag <nav> agrupa explicitamente a seção de navegação do site-->
+    <nav>
+      <ul>
+        <li><a href="#section1">Seção 1</a></li>
+        <li><a href="#section2">Seção 2</a></li>
+        <li><a href="#section3">Seção 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Aqui a tag <main> agrupa explicitamente a seção de conteúdo principal do site -->
+  <main>
+
+    <!-- Separação do grupo 4: Parágrafos e formatação básica de textos -->
+    <section id="section1">
+      <!-- Aqui o <h2> é mais um título porém tendo um "peso" menor seguindo até o <h6> -->
+      <h2>Seção 1: Parágrafos e formatação</h2>
+      <p>
+        Aqui está um <strong>parágrafo</strong> (negrito com strong) com
+        alguns textos: <br />
+        <em>itálico,</em><u>sublinhado,</u><mark>destacado</mark>
+      </p>
+      <!-- É uma boa prática adicionar o cite na tag blockquote mesmo não sendo obrigatório -->
+      <blockquote cite="https://conceito.de/html">
+        Este é um bloco de citação para destacar techos importantes. No caso o
+        conceito de <a href="https://conceito.de/html"" target=" _blank" rel="noopener noreferrer">Html</a>
+      </blockquote>
+    </section>
+
+    <!-- Separação do grupo 2: Lista e Tabelas -->
+    <section id="section2">
+      <h2>Seção 2: Lista e Tabelas</h2>
+      <!-- Lista ordenada -->
+      <ol>
+        <li> <- Primeiro item</li>
+        <li> <- Segundo item</li>
+        <li> <- Terceiro item</li>
+      </ol>
+      <!-- Lista não ordenada com indice quadrado. 
+         Obsv: não é uma boa prática styles inline-->
+      <ul style="list-style-type: square;">
+        <li>Primeiro item não ordenado</li>
+        <li>Segundo item não ordenado</li>
+        <li>Terceiro item não ordenado</li>
+      </ul>
+
+      <!-- Tabela com atributos -->
+      <table border="1">
+        <caption>
+          Titúlo da Tabela de Exemplo:
+        </caption>
+        <thead>
+          <tr>
+            <th>Título da Coluna 1</th>
+            <th>Título da Coluna 2</th>
+            <th>Título da Coluna 3</th>
+          </tr>
+        <tbody>
+          <tr>
+            <td>Dados 1 (coluna 1 / linha 1)</td>
+            <td>Dados 2</td>
+            <td>Dados 3</td>
+          </tr>
+          <tr>
+            <td>Dados 4 (coluna 1 / linha 2)</td>
+            <td>Dados 5</td>
+            <td>Dados 6</td>
+          </tr>
+        </tbody>
+        </thead>
+      </table>
+    </section>
+
+    <!-- Separação do grupo 3: Imagem e Formulário -->
+    <section id="section3">
+
+      <!-- Imagem com atributos de formatação -->
+      <img src="feneco-based.jpg"
+      alt="foto de um feneco"
+      title="Dúvido não achar fofo!"
+      width="250"
+      height="250"
+      />
+    </section>
+
+  </main>
+</body>
+
 </html>
