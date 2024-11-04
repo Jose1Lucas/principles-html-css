@@ -45,3 +45,69 @@ nav ul li a:hover {
     border-style: dashed;
 }
 
+/* Seções */
+section{
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    border-bottom: 2.5px solid ;
+}
+
+/* Parágrafos e blocos de citação */
+p {
+    margin: 10px 0;
+}
+
+blockquote {
+    font-style: italic;
+    color: #777;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 3.5px solid #333;
+    background-color: #fffcec;
+}
+
+/* Listas */
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li, ol li{
+    margin: 5px 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+th, td {
+    padding: 7px;
+    border: 3.5px solid #ccc;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+caption {
+    font-size: 18px;
+    animation: fade 4s infinite alternate;
+    white-space: nowrap;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+
+
