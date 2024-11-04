@@ -92,12 +92,40 @@
     <section id="section3">
 
       <!-- Imagem com atributos de formatação -->
-      <img src="feneco-based.jpg"
-      alt="foto de um feneco"
-      title="Dúvido não achar fofo!"
-      width="250"
-      height="250"
-      />
+      <img src="feneco-based.jpg" alt="foto de um feneco" title="Dúvido não achar fofo!" width="250" height="250" />
+
+      <!-- Formulário e inputs -->
+      <form action="/enviar" method="post">
+        <label for="nome">Dígite seu nome:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Sou Lindo Silva" />
+
+        <label for="email">Dígite seu email:</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@gmail.com" />
+
+        <label for="senha">Dígite sua senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="4 dígitos: 1020" />
+
+        <label for="paragrafo">Escreva um parágrafo:</label>
+        <textarea name="paragrafo" id="paragrafo" rows="3" cols="35"></textarea>
+
+        <label for="opcoes">Manga é:</label>
+        <select id="opcoes" nome="opcoes">
+          <option value="fruta">fruta.</option>
+          <option value="roupa">parte da roupa.</option>
+          <option value="ambos">ambas coisas.</option>
+        </select>
+        <!-- A tag <fieldset> em HTML agrupa elementos de formulário para organizá-los visualmente, 
+          geralmente com uma legenda usando a tag <legend>. -->
+        <fieldset>
+          <legend>Selecione o almoço completo com sobremesa:</legend>
+          <label><input type="checkbox" name="preferencia1" value="opcao1">Arroz com brócolis</label>
+          <label><input type="checkbox" name="preferencia2" value="opcao2">Bife de fígado acebolado</label>
+          <label><input type="checkbox" name="preferencia3" value="opcao3">Doce de Jaca</label>
+        </fieldset>
+        
+        <button type="submit">Enviar pedido.</button>
+
+      </form>
     </section>
 
   </main>
