@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o corpo da página */
+body {
+    line-height: 1.6;
+    font-size: 16px;
+    color:#333;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header{
+    background-color: #333;
+    color: #f4f4f9;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Aqui o list-style-type não funciona pois
+no html temos um css inline que prevalece */
+nav ul{
+    list-style-type:none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    padding: 2.5px;
+    border-style: dashed;
+}
+
